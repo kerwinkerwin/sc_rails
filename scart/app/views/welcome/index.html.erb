@@ -1,1 +1,5 @@
-poo
+Hello
+<p><%= @user.email %></p>
+<p><%= @user.id %></p>
+
+<p><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></p>

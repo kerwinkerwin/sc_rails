@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
-    @user = User.all
+    redirect_to new_user_session_path if !user_signed_in?
+    @user = current_user
   end
-
 end
