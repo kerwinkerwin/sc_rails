@@ -1,7 +1,10 @@
 class WelcomeController < ApplicationController
 
   def index
-    redirect_to new_user_session_path if !user_signed_in?
-    @user = current_user
+    if !user_signed_in?
+      redirect_to new_user_session_path
+    else
+      redirect_to products_index_path
+    end
   end
 end

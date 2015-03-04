@@ -1,15 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'products/new'
-
-  get 'products/create'
-
-  get 'products/update'
-
-  get 'products/edit'
-
-  get 'products/destroy'
-
   get 'products/index'
 
   get 'products/show'
@@ -21,7 +11,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root to: 'welcome#index'
 
-  
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
