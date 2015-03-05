@@ -8,5 +8,6 @@
       <li><%=product.description%></li>
       <li><%=product.formatted_price%></li>
       <li><%=product.stock%></li>
+      <%= link_to "Product", products_show_path(id:product.id) %>
     </ul>
   <%end%>
