@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    p params
+    
     @product = Product.find(params[:id].to_i)
   end
 end
