@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
 
+  get 'products/index'
+
+  get 'products/show'
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root to: 'welcome#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -18,7 +23,9 @@ Rails.application.routes.draw do
 
   # Example resource route with options:
   #   resources :products do
-  #     member do
+  #     member do |variable|
+
+  # end
   #       get 'short'
   #       post 'toggle'
   #     end
