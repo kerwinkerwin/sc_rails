@@ -1,4 +1,5 @@
 <%=@product.name%>
 <%=@product.description%>
 <%=@product.formatted_price%>
-<%= link_to "Home", products_index_path%>
+<%= link_to "Return to home", products_index_path%>
+<%= button_to "Add to Cart", add_path(id:@product.id, stock:1), method: :post%>  
