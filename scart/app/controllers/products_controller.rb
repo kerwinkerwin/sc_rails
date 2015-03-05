@@ -17,10 +17,11 @@ class ProductsController < ApplicationController
 
   def index
     @user = current_user
+    @product =Product.all
   end
 
   def show
-    
+
     @product = Product.find(params[:id].to_i)
   end
 end
