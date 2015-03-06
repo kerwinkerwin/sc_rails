@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'products/show'
 
-  get 'products/add', to:'products#add', as:'add'
+  post 'products/add', to:'products#add', as:'add'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
