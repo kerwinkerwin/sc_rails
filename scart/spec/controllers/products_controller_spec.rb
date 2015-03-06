@@ -35,7 +35,6 @@ RSpec.describe ProductsController, type: :controller do
     end
 
     it"saves product id and stock in an array" do
-      
     end
 
     xit "saves array to a session variable" do

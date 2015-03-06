@@ -15,4 +15,5 @@ class Product < ActiveRecord::Base
     price*(1-(discount/100.0))
   end
 
+
 end

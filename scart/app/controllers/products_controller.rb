@@ -25,6 +25,9 @@ class ProductsController < ApplicationController
   end
 
   def add
-
+    p params
+    session[:orders] = [params[:id],params[:stock]]
+    
+    redirect_to products_show_path(params[:id])
   end
 end
